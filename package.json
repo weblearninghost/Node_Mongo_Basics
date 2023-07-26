@@ -1,0 +1,19 @@
+{
+  "name": "node_mongo_basics",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weblearninghost/Node_Mongo_Basics.git"
+  },
+  "author": "lalita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weblearninghost/Node_Mongo_Basics/issues"
+  },
+  "homepage": "https://github.com/weblearninghost/Node_Mongo_Basics#readme"
+}
