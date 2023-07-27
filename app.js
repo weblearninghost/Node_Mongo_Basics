@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 require('dotenv').config();
-
+const blogRouter = require('./routes/crud.route');
 // MongoDB connection
 const connectDB = async () => {
   try {
@@ -20,6 +20,9 @@ connectDB();
 
 // express middleware
 app.use(express.json());
+
+//add router here
+app.use('/api/blogs', blogRouter);
 
 //assign the port
 app.listen(process.env.PORT, 'localhost', () => {
