@@ -39,3 +39,23 @@ function printArea(imageArray) {
   console.log({ areas });
 }
 printArea(images);
+
+//Use of array map
+function pluck(array, property) {
+  const result = array.map((element) => {
+    return element[property];
+  });
+  console.log({ result });
+}
+pluck(images, 'height');
+
+// Use of Promises
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve(console.log('I love Abhi!'));
+  }, 3000);
+});
+
+myPromise.then(function name() {
+  console.log('Amazing!');
+});
